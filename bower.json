@@ -1,0 +1,13 @@
+{
+  "name": "angular-justgage",
+  "version": "1.0.0",
+  "main": "ng-justgage.js",
+  "ignore": [
+    "README.md"
+  ],
+  "dependencies": {
+    "angular": "~1.2.14",
+    "raphael": "~2.1.2",
+    "justgage-bower": "latest"
+  }
+}
