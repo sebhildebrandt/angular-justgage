@@ -1,7 +1,7 @@
 angular-justgage
 ================
 
-angulat-justgage is a angular wrapper (directive) for the [JustGage](http://justgage.com/) chart library - Version 0.0.1 - (MIT-license)
+angulat-justgage is a angular wrapper (directive) for the [JustGage](http://justgage.com/) chart library - Version 0.0.2 - (MIT-license)
 
 ![justGage](https://dl.dropbox.com/u/6211055/IMG/justgage_logo.png)
 
@@ -34,7 +34,7 @@ Warning: this will _not_ install the latest version of justgage, because there i
 </html>
 ```
 
-where myvalue is the scope-variable that you danamically can change.
+where ```myvalue``` is the scope-variable that you dynamically can change.
 
 ## Attributes
 
@@ -58,15 +58,18 @@ decimals|decimals|number of decimals to display|decimals=0
 gaugeWidthScale|gauge-width-scale|thickness of gauge|gauge-width-scale=0.1 (for thin gauge)
 gaugeColor|gauge-color|color of gauge|gauge-color=#ff0000
 label|label|label|label="My Label"
+symbol|symbol|symbol next to value (suffix)|symbol="%"
 donutStartAngle|donut-start-angle|start angle of gauge for donuts|donut-start-angle=90
 relativeGaugeSize|relative-gauge-size|if you like to habe dynamic resizing|relative-gauge-size=true
 valueMinFontSize|value-min-font-size|relative font size for value|value-min-font-size=16
 titleMinFontSize|title-min-font-size|relative font size for title|title-min-font-size=16
 labelMinFontSize|lable-min-font-size|relative font size for label|label-min-font-size=10
+hideValue|hide-value|hide value label|hide-value=true
+hideMinMax|hide-min-max|hide min-max label|hide-min-max=true
 
 ## Special attributes
 
-customSectors is a specitl attribute, because this would require an array ... so I came up wih this solution:
+customSectors is a special attribute, because this would require an array ... so I came up wih this solution:
 
 To use e.g. this justgage custom sectors:
 
@@ -97,6 +100,13 @@ Hope, this example makes it clear ;-)
 ## Demo
 
 in the demo directory you have a simple app, that demonstrates 6 responsive charts with different options. Just try it.
+
+## Version history
+
+| Version        | Date           | Comment  |
+| -------------- | -------------- | -------- |
+| 0.0.2          | 2014-03-14     | added attributes 'symbol', 'hideValue', 'hideMinMax'. Improvements and bug-fixes. |
+| 0.0.1          | 2014-03-11     | initial release |
 
 ## Comments
 

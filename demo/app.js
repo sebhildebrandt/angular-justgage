@@ -1,5 +1,6 @@
 angular.module('app', ['charts.ng.justgage']).controller('myController', function($scope) {
-    $scope.value1 = 42;
+    $scope.valueGauge2 = 42;
+    $scope.valueGauge3 = 11;
 
     setInterval(function(){
         $scope.$apply(function() {

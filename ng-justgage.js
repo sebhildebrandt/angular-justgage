@@ -18,13 +18,16 @@ angular.module("charts.ng.justgage", [])
           gaugeWidthScale: '=?',
           gaugeColor: '=?',
           label: '=?',
+          symbol: '@',
           customSectors: '@',
           donutStartAngle: '@',
           relativeGaugeSize: '=?',
           valueMinFontSize: '=?',
           titleMinFontSize: '=?',
           labelMinFontSize: '=?',
-          labelMinFontSize: '=?'
+          labelMinFontSize: '=?',
+          hideValue: '=?',
+          hideMinMax: '=?'
         },
         template: '<div id={{id}}-justgage></div>',
         link: function (scope, elem, attrs) {
@@ -54,6 +57,7 @@ angular.module("charts.ng.justgage", [])
               gaugeWidthScale: scope.gaugeWidthScale || 1.0,
               gaugeColor: scope.gaugeColor || "#edebeb",
               label: scope.label || '',
+              symbol: scope.symbol || '',
               customSectors: customSectors,
               donutStartAngle: scope.donutStartAngle || 90,
               relativeGaugeSize: angular.isDefined(scope.relativeGaugeSize) ? scope.relativeGaugeSize : false,
@@ -62,6 +66,8 @@ angular.module("charts.ng.justgage", [])
               labelMinFontSize: scope.labelMinFontSize || 10,
               minLabelMinFontSize: scope.labelMinFontSize || 10,
               maxLabelMinFontSize: scope.labelMinFontSize || 10,
+              hideValue: scope.hideValue || false,
+              hideMinMax: scope.hideMinMax || false
             })
 
             scope.$watch('value', function (updatedValue) {
