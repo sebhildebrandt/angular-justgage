@@ -1,7 +1,7 @@
 angular.module("charts.ng.justgage", [])
     .directive('justGage', ['$timeout', function ($timeout) {
       return {
-        restrict: 'E',
+        restrict: 'EA',
         scope: {
           id: '@',
           min: '=',

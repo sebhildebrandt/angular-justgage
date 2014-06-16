@@ -34,7 +34,7 @@ Warning: this will _not_ install the latest version of justgage, because there i
 </html>
 ```
 
-where ```myvalue``` is the scope-variable that you dynamically can change.
+where ```myvalue``` is the scope-variable that you dynamically can change. ```just-gage``` can also be applied as an attribute of a ```div``` or other element, in cases where that may be important for layout.
 
 ## Attributes
 
