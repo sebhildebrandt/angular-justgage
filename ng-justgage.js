@@ -16,7 +16,7 @@ angular.module("charts.ng.justgage", [])
           labelFontColor: '@',
           decimals: '=?',
           gaugeWidthScale: '=?',
-          gaugeColor: '=?',
+          gaugeColor: '@?',
           label: '=?',
           symbol: '@',
           customSectors: '@',
