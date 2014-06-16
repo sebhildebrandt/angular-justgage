@@ -8,6 +8,6 @@
   "dependencies": {
     "angular": "~1.2.14",
     "raphael": "~2.1.2",
-    "justgage-bower": "latest"
+    "justgage-official": "latest"
   }
 }
