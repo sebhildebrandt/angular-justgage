@@ -41,6 +41,11 @@ angular.module("charts.ng.justgage", [])
               });
             }
 
+            // Backwards compatibility for gauge-color="'#ff0000'" syntax
+            if (scope.gaugeColor) {
+              scope.gaugeColor = scope.gaugeColor.replace(/^'|'$/g, "");
+            }
+
             var g = new JustGage({
               id: scope.id + '-justgage',
               min: scope.min,
