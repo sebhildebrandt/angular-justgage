@@ -1,7 +1,7 @@
 angular-justgage
 ================
 
-angulat-justgage is a angular wrapper (directive) for the [JustGage](http://justgage.com/) chart library - Version 0.0.2 - (MIT-license)
+angulat-justgage is a angular wrapper (directive) for the [JustGage](http://justgage.com/) chart library - Version 0.0.4 - (MIT-license)
 
 ![justGage](https://dl.dropbox.com/u/6211055/IMG/justgage_logo.png)
 
@@ -13,10 +13,12 @@ First install the required libraries (angular, rapael & justgage).
 # bower install
 ```
 
-Warning: this will _not_ install the latest version of justgage, because there is now bower package to the original justgage. I recomend downloading the latest version (justgage.js) from the original justgage GitHub-Repository here: [justgage](https://github.com/toorshia/justgage)
+This will now install the latest version of justgage (unlike version 0.0.2 where there was no official justgage bower package).
 
 
 ## Usage
+
+#### HTML-Part
 
 ```html
 <!DOCTYPE html>
@@ -24,7 +26,7 @@ Warning: this will _not_ install the latest version of justgage, because there i
 <head>
     <script src="../components/angular/angular.min.js"></script>
     <script src="../components/raphael/raphael-min.js"></script>
-    <script src="../components/justgage-bower/justgage.js"></script>
+    <script src="../components/justgage-official/justgage.js"></script>
     <script src="../ng-justgage.js"></script>
     <script src="../app.js"></script>
 </head>
@@ -34,7 +36,29 @@ Warning: this will _not_ install the latest version of justgage, because there i
 </html>
 ```
 
-where ```myvalue``` is the scope-variable that you dynamically can change. ```just-gage``` can also be applied as an attribute of a ```div``` or other element, in cases where that may be important for layout.
+where ```myvalue``` is the scope-variable that you dynamically can change. ```just-gage``` can also be applied as an attribute of a ```div``` or other element, in cases where that may be important for layout:
+
+```html
+  ...
+  <div just-gage id="test1" min=0 max=100 value="myvalue" title="Test 1"></div>
+  ...
+```
+
+#### JS-Part (app.js)
+
+```js
+angular.module('app', ['charts.ng.justgage']).controller('myController', function($scope) {
+    // set initial value for the gauge
+    $scope.myvalue = 50;
+
+    // change value randomly each second
+    setInterval(function(){
+        $scope.$apply(function() {
+            $scope.myvalue = getRandomInt(10, 90);
+        });
+    }, 1000);
+});
+```
 
 ## Attributes
 
@@ -105,6 +129,8 @@ in the demo directory you have a simple app, that demonstrates 6 responsive char
 
 | Version        | Date           | Comment  |
 | -------------- | -------------- | -------- |
+| 0.0.4          | 2014-09-15     | Updated Doc, improved demo |
+| 0.0.3          | 2014-09-15     | Merged pull requests - thanx, [idpaterson](https://github.com/idpaterson). Updated Doc|
 | 0.0.2          | 2014-03-14     | added attributes 'symbol', 'hideValue', 'hideMinMax'. Improvements and bug-fixes. |
 | 0.0.1          | 2014-03-11     | initial release |
 
@@ -123,6 +149,9 @@ http://www.plus-innovations.com
 #### Credits
 
 Written by Sebastian Hildebrandt
+
+Contributers:
+[idpaterson](https://github.com/idpaterson)
 
 #### License
 

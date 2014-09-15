@@ -1,6 +1,6 @@
 {
   "name": "angular-justgage",
-  "version": "1.0.0",
+  "version": "0.0.4",
   "main": "ng-justgage.js",
   "ignore": [
     "README.md"
