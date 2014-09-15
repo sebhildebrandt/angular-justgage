@@ -16,7 +16,7 @@ angular.module("charts.ng.justgage", [])
           labelFontColor: '@',
           decimals: '=?',
           gaugeWidthScale: '=?',
-          gaugeColor: '=?',
+          gaugeColor: '@?',
           label: '=?',
           symbol: '@',
           customSectors: '@',
@@ -39,6 +39,11 @@ angular.module("charts.ng.justgage", [])
                 element = element.split('-');
                 customSectors.push({color: element[2], lo: element[0], hi: element[1]})
               });
+            }
+
+            // Backwards compatibility for gauge-color="'#ff0000'" syntax
+            if (scope.gaugeColor) {
+              scope.gaugeColor = scope.gaugeColor.replace(/^'|'$/g, "");
             }
 
             var g = new JustGage({
