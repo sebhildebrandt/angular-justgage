@@ -14,7 +14,7 @@ First install the required libraries (angular, rapael & justgage).
 This will now install the latest version of justgage (unlike version 0.0.2 where there was no official justgage bower package).
 
 > **Note:**
-> In this package I defined in .bowerrc to store all bower dependencies in the ./conponent path (default would be bower_components)
+> In this package I defined in .bowerrc to store all bower dependencies in the `./component` path (default would be `./bower_components`)
 
 
 ## Usage
