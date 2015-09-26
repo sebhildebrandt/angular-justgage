@@ -3,8 +3,6 @@ angular-justgage
 
 angulat-justgage is a angular wrapper (directive) for the [JustGage](http://justgage.com/) chart library - Version 0.0.4 - (MIT-license)
 
-![justGage](https://dl.dropbox.com/u/6211055/IMG/justgage_logo.png)
-
 ## Installation
 
 First install the required libraries (angular, rapael & justgage).
@@ -176,8 +174,6 @@ Contributers:
 >LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 >OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 >THE SOFTWARE.
-> 
->Further details see "LICENSE" file.
 
 [license-url]: https://github.com/sebhildebrandt/angular-justgage/blob/master/LICENSE
 [license-img]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
