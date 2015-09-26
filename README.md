@@ -15,6 +15,9 @@ First install the required libraries (angular, rapael & justgage).
 
 This will now install the latest version of justgage (unlike version 0.0.2 where there was no official justgage bower package).
 
+> **Note:**
+> In this package I defined in .bowerrc to store all bower dependencies in the ./conponent path (default would be bower_components)
+
 
 ## Usage
 
@@ -129,6 +132,7 @@ in the demo directory you have a simple app, that demonstrates 6 responsive char
 
 | Version        | Date           | Comment  |
 | -------------- | -------------- | -------- |
+| 0.0.5          | 2015-09-26     | Updated Docs |
 | 0.0.4          | 2014-09-15     | Updated Doc, improved demo |
 | 0.0.3          | 2014-09-15     | Merged pull requests - thanx, [idpaterson](https://github.com/idpaterson). Updated Doc|
 | 0.0.2          | 2014-03-14     | added attributes 'symbol', 'hideValue', 'hideMinMax'. Improvements and bug-fixes. |
@@ -138,26 +142,22 @@ in the demo directory you have a simple app, that demonstrates 6 responsive char
 
 If you have ideas or comments, please do not hesitate to contact me.
 
-
-Happy gauging!
-
 Sincerely,
-Sebastian Hildebrandt
-http://www.plus-innovations.com
 
+Sebastian Hildebrandt, [+innovations](http://www.plus-innovations.com)
 
-#### Credits
+## Credits
 
-Written by Sebastian Hildebrandt
+Written by Sebastian Hildebrandt [sebhildebrandt](https://github.com/sebhildebrandt)
 
 Contributers:
 [idpaterson](https://github.com/idpaterson)
 
-#### License
+## License [![MIT license][license-img]][license-url]
 
->The MIT License (MIT)
+>The [`MIT`][license-url] License (MIT)
 >
->Copyright (c) 2014 +innovations.
+>Copyright &copy; 2014-2015 Sebastian Hildebrandt, [+innovations](http://www.plus-innovations.com).
 >
 >Permission is hereby granted, free of charge, to any person obtaining a copy
 >of this software and associated documentation files (the "Software"), to deal
@@ -179,4 +179,5 @@ Contributers:
 > 
 >Further details see "LICENSE" file.
 
-
+[license-url]: https://github.com/sebhildebrandt/angular-justgage/blob/master/LICENSE
+[license-img]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
